@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install flex gcc
+mkdir ~/LexLab
+cd ~/LexLab
+nano reserved.l
+flex reserved.l
+gcc lex.yy.c -o reserved -lfl
+./reserved
